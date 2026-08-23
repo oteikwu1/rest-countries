@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap'); */
+
+
+:root {
+   --Blue900-DarkModeElements: hsl(209, 23%, 22%);
+   --Blue950-DarkModeBackground: hsl(207, 26%, 17%);
+   --Grey950LightModeText: hsl(200, 15%, 8%);
+   --Grey400LightModeInput: hsl(0, 0%, 50%);
+   --Grey50LightModeBackground: hsl(0, 0%, 99%);
+   --WhiteDarkModeTextLightModeElements: hsl(0, 0%, 100%);
+   --HomePageFontSize: 14px;
+   --HomePageFontSize: 16px;
+   --FontWeights1: 300;
+    --FontWeights1: 300;
+    --FontWeights1: 600;    
+    --FontWeights1: 800;
+     --MainFont: "Nunito Sans";
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    background-color: var(--Grey50LightModeBackground)
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: var(--WhiteDarkModeTextLightModeElements);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+
+}
+
+.header-text {
+    font-family: var(--MainFont);
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.toggle-bg-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 80px;
+}
+
+.moon-icon {
+    width: 20px;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+/* 
+
+[Font Awesome](https: //fontawesome.com)
+    - [IcoMoon](https: //icomoon.io)
+    - [Ionicons](https: //ionicons.com)
+     Mobile: 375px 
+     - Desktop: 144
+
+*/
