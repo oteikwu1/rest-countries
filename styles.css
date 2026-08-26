@@ -26,7 +26,7 @@
 body {
     max-width: 1440px;
     width: 100%;
-    background-color: var(--Grey50LightModeBackground)
+    background-color: var(--Grey50LightModeBackground);
 }
 
 .header {
@@ -53,6 +53,7 @@ body {
     align-items: center;
     gap: 6px;
     margin-right: 80px;
+    cursor: pointer;
 }
 
 .moon-icon {
@@ -64,13 +65,62 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
+    margin: 40px 80px;
+}
+
+.search-input {
+    background-color: var(--Grey50LightModeBackground);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+    border: none;
+}
+
+.search-input:active {
+    outline: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+.search-input > input {
+    border: none;
+    padding: 10px;
+    min-width: 300px;
+    width: 100%;
+}
+
+.search-input > img {
+   width: 20px;
+}
+
+#select {
+    background-color: var(--Grey50LightModeBackground);
+    border: none;
+    padding: 10px 16px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 6px;
+}
+
+.display-country {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 40px;
+    margin: 40px 80px;
+}
+
+.country {
+    background-color: blue;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
 }
 /* 
 
-[Font Awesome](https: //fontawesome.com)
-    - [IcoMoon](https: //icomoon.io)
-    - [Ionicons](https: //ionicons.com)
+
+
      Mobile: 375px 
-     - Desktop: 144
+
 
 */
