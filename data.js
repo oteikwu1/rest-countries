@@ -1,4 +1,4 @@
- [
+ const countries = [
   {
     "name": "Afghanistan",
     "topLevelDomain": [".af"],
@@ -16822,3 +16822,5 @@
     "independent": true
   }
 ]
+
+export default countries

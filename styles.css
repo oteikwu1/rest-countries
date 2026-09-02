@@ -23,6 +23,13 @@
      --MainFont: "Nunito Sans";
 }
 
+.dark-mode {
+    --Blue900-DarkModeElements: hsl(209, 23%, 22%);
+   background-color: var(--Blue950-DarkModeBackground);
+   color: var(--WhiteDarkModeTextLightModeElements)
+}
+
+
 body {
     max-width: 1440px;
     width: 100%;
@@ -43,6 +50,7 @@ body {
     font-family: var(--MainFont);
     font-weight: bold;
     margin-left: 80px;
+    color: var();
 }
 
 .toggle-bg-btn {
@@ -68,7 +76,7 @@ body {
     margin: 40px 80px;
 }
 
-.search-input {
+.search-input-container {
     background-color: var(--Grey50LightModeBackground);
     display: flex;
     align-items: center;
@@ -84,14 +92,14 @@ body {
     box-shadow: none;
 }
 
-.search-input > input {
+.search-input-container > input {
     border: none;
     padding: 10px;
     min-width: 300px;
     width: 100%;
 }
 
-.search-input > img {
+.search-input-container > img {
    width: 20px;
 }
 
@@ -101,20 +109,39 @@ body {
     padding: 10px 16px;
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
     border-radius: 6px;
+    webkit-appearance: none;
+    moz-appearance: none;
+    /* appearance: none; */
+
 }
 
-.display-country {
+.display-country{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
     gap: 40px;
     margin: 40px 80px;
 }
 
-.country {
-    background-color: blue;
-    width: fit-content;
-    height: fit-content;
+.countries-result {
+    border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+    max-height: fit-content;
+    overflow: hidden;
+    background-color: var(--WhiteDarkModeTextLightModeElements);
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+}
+
+.countries-result .country-flag {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.country-flag {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 /* 
 
