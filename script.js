@@ -30,19 +30,26 @@ function displayCountries(allCountries) {
     ).join('');
 }
 
+displayCountries(countries);
 
-searchInput.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') {
-    e.preventDefault();
-    let searchValue = searchInput.value;
-    let searchCountries = countries.find((country) =>
-      country.name.toLowerCase().includes(searchValue)
+searchInput.addEventListener("keydown", (e) => {
+
+  if(e.key === "Enter") {
+    e.preventDefault()
+    let searchValue = searchInput.value.toLowerCase();
+
+    let foundCountry = countries.find((country) => 
+      country.name.toLowerCase() === searchValue
     );
 
-    if (searchCountries) {
-      
+    if(foundCountry) {
+      localStorage.setItem("selectedCountry", JSON.stringify(foundCountry))
+      window.location.href = "detail.html"
+     
+    } else {
+        displayContainer.innerHTML = `<h2>Country not Found</h2>`;
     }
-    displayCountries(searchCountries);
-    searchInput.value = '';
+   searchInput.value = '';
   }
-});
+
+})

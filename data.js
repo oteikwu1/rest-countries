@@ -23,10 +23,10 @@
     },
     "currencies": [
       {
-        "code": "AFN",
         "name": "Afghan afghani",
+        "code": "AFN",
         "symbol": "؋"
-      }
+      },
     ],
     "languages": [
       {

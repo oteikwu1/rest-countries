@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+:root {
+  --Blue900-DarkModeElements: hsl(209, 23%, 22%);
+  --Blue950-DarkModeBackground: hsl(207, 26%, 17%);
+  --Grey950LightModeText: hsl(200, 15%, 8%);
+  --Grey400LightModeInput: hsl(0, 0%, 50%);
+  --Grey50LightModeBackground: hsl(0, 0%, 99%);
+  --WhiteDarkModeTextLightModeElements: hsl(0, 0%, 100%);
+  --HomePageFontSize: 14px;
+  --HomePageFontSize: 16px;
+  --FontWeights1: 300;
+  --FontWeights1: 300;
+  --FontWeights1: 600;
+  --FontWeights1: 800;
+  --MainFont: "Nunito Sans";
+}
+
+.dark-mode {
+  --Blue900-DarkModeElements: hsl(209, 23%, 22%);
+  background-color: var(--Blue950-DarkModeBackground);
+  color: var(--WhiteDarkModeTextLightModeElements)
+}
+
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  background-color: var(--Grey50LightModeBackground);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: var(--WhiteDarkModeTextLightModeElements);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+}
+
+.header-text {
+  font-family: var(--MainFont);
+  font-weight: bold;
+  margin-left: 80px;
+  color: var();
+}
+
+.toggle-bg-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.moon-icon {
+  width: 20px;
+}
+
+.toggle-bg-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.back-btn {
+  margin: 60px 0;
+  padding: 8px 20px;
+  background-color: var(--Grey50LightModeBackground);
+  border: none;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+  border-radius: 6px;
+}
+
+.back-btn > a {
+  text-decoration: none;
+  color: var(--Blue900-DarkModeElements);
+  font-weight: 400;
+}
+
+.country-details {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.country-flag {
+  width: 500px;
+  /* height: 200px; */
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
