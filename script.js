@@ -3,6 +3,7 @@ import countries from './data.js'
 const toggleBgBtn = document.querySelector('.toggle-bg-btn');
 let searchInput = document.querySelector('.search-input');
 const displayContainer = document.querySelector('.display-country');
+const regionSelect = document.getElementById('region-select');
 
 
 function toggleBackgroundColor() {
@@ -10,7 +11,6 @@ function toggleBackgroundColor() {
      toggleBackground.classList.toggle('dark-mode') 
 }
 
- 
  toggleBgBtn.addEventListener('click', toggleBackgroundColor);
 
  
@@ -52,4 +52,22 @@ searchInput.addEventListener("keydown", (e) => {
    searchInput.value = '';
   }
 
+});
+
+function handleRegionSelection(event) {
+  const selectedRegion = event.target.value;
+
+  if(!selectedRegion || selectedRegion === 'filter') {
+    return countries;
+  }
+
+  const filterData = countries.filter(country => country.region === selectedRegion)
+  return filterData
+}
+
+regionSelect.addEventListener('change', (event) => {
+  const result = handleRegionSelection(event);
+
+   displayCountries(result);
 })
+
