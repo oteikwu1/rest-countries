@@ -4,11 +4,21 @@ const toggleBgBtn = document.querySelector('.toggle-bg-btn');
 let searchInput = document.querySelector('.search-input');
 const displayContainer = document.querySelector('.display-country');
 const regionSelect = document.getElementById('region-select');
-
+const themeIcon = document.querySelector('.theme-icon');
 
 function toggleBackgroundColor() {
-     let toggleBackground = document.body;
-     toggleBackground.classList.toggle('dark-mode') 
+  let toggleBackground = document.body;
+  let themeIcon = document.getElementById('theme-icon'); 
+
+  toggleBackground.classList.toggle('dark-mode');
+
+  let isDarkMode = toggleBackground.classList.contains('dark-mode');
+
+  if (isDarkMode) {
+    themeIcon.src = './assets/sun.png';
+  } else {
+    themeIcon.src = './assets/moon.svg'; 
+}
 }
 
  toggleBgBtn.addEventListener('click', toggleBackgroundColor);
@@ -21,13 +31,14 @@ function displayCountries(allCountries) {
         `
      <div class="countries-result">
       <img class="country-flag" src="${country.flag}" alt="${country.name} flag" />
-      <h3>${country.name}</h3>
+      <h3 class="country-name">${country.name}</h3>
      <p> <strong>Population: </strong>${country.population} </p>
      <p> <strong>Region: </strong>${country.region}  </p>
       <p> <strong>Capital: </strong>${country.capital}  </p>
      </div>
 `,
-    ).join('');
+    )
+    .join('');
 }
 
 displayCountries(countries);

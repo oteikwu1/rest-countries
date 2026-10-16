@@ -20,12 +20,18 @@
     --FontWeights1: 300;
     --FontWeights1: 600;    
     --FontWeights1: 800;
-     --MainFont: "Nunito Sans";
+    --MainFont: "Nunito Sans", sans-serif;
 }
 
 .dark-mode {
     --Blue900-DarkModeElements: hsl(209, 23%, 22%);
-   background-color: var(--Blue950-DarkModeBackground);
+    --Grey950LightModeText: hsl(0, 0%, 100%);
+    background-color: var(--Blue950-DarkModeBackground);
+   --WhiteDarkModeTextLightModeElements: hsl(0, 0%, 100%);
+   --Grey50LightModeBackground: #3a3a3a;
+   --Grey950LightModeText: hsl(0, 0%, 100%);
+   --WhiteDarkModeTextLightModeElements: hsl(207, 26%, 17%);
+    --Grey950LightModeText: hsl(0, 0%, 100%);
    color: var(--WhiteDarkModeTextLightModeElements)
 }
 
@@ -41,23 +47,24 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    background-color: var(--WhiteDarkModeTextLightModeElements);
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
-
+    color: var(--Grey950LightModeText);
 }
 
 .header-text {
     font-family: var(--MainFont);
     font-weight: bold;
     margin-left: 80px;
-    color: var();
+    font-family: var(--MainFont);
+    color: var(--Grey950LightModeText);
 }
+
 
 .toggle-bg-btn {
     background-color: transparent;
     border: none;
     display: flex;
-    align-items: center;display: flex;
+    align-items: center;
     align-items: center;
     gap: 6px;
     margin-right: 80px;
@@ -66,6 +73,26 @@ body {
 
 .moon-icon {
     width: 20px;
+}
+
+.toggle-text {
+    font-family: var(--MainFont);
+    color: var(--Grey950LightModeText);
+}
+
+.back-btn {
+    margin: 60px 0;
+    padding: 8px 20px;
+    background-color: var(--Grey50LightModeBackground);
+    border: none;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 6px;
+}
+
+.back-btn>a {
+    text-decoration: none;
+    color: var(--Blue900-DarkModeElements);
+    font-weight: 400;
 }
 
 .search-section {
@@ -84,6 +111,7 @@ body {
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
     border-radius: 8px;
     border: none;
+    background-color: var(--Grey50LightModeBackground)
 }
 
 .search-input:active {
@@ -92,11 +120,18 @@ body {
     box-shadow: none;
 }
 
-.search-input-container > input {
+.search-input {
     border: none;
     padding: 10px;
     min-width: 300px;
     width: 100%;
+    color: var(--Grey950LightModeText);
+    background-color: var(--Grey50LightModeBackground);
+    font-size: 1em;
+}
+
+.search-input::placeholder {
+    color: var(--Grey950LightModeText);
 }
 
 .search-input-container > img {
@@ -111,6 +146,7 @@ body {
     border-radius: 6px;
     webkit-appearance: none;
     moz-appearance: none;
+    color: var(--Grey950LightModeText);
     /* appearance: none; */
 
 }
@@ -122,6 +158,7 @@ body {
     margin: 40px 80px;
 }
 
+
 .countries-result {
     border-radius: 8px;
     max-width: 300px;
@@ -130,6 +167,20 @@ body {
     overflow: hidden;
     background-color: var(--WhiteDarkModeTextLightModeElements);
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    padding-bottom: 40px;
+}
+
+.countries-result p {
+    font-family: var(--MainFont);
+    margin: 8px 20px;
+    color: var(--Grey950LightModeText);
+    font-size: .8em;
+}
+
+.country-name {
+    font-family: var(--MainFont);
+    padding: 20px;
+    color: var(--Grey950LightModeText);
 }
 
 .countries-result .country-flag {
@@ -143,6 +194,9 @@ body {
     height: 200px;
     object-fit: cover;
 }
+
+
+
 /* 
 
 

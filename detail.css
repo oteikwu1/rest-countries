@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,13 +17,13 @@
   --FontWeights1: 300;
   --FontWeights1: 600;
   --FontWeights1: 800;
-  --MainFont: "Nunito Sans";
+  --MainFont: "Nunito Sans", sans-serif;
 }
 
 .dark-mode {
   --Blue900-DarkModeElements: hsl(209, 23%, 22%);
-  background-color: var(--Blue950-DarkModeBackground);
-  color: var(--WhiteDarkModeTextLightModeElements)
+  --WhiteDarkModeTextLightModeElements: hsl(209, 23%, 22%);
+
 }
 
 
@@ -46,7 +46,7 @@ body {
   font-family: var(--MainFont);
   font-weight: bold;
   margin-left: 80px;
-  color: var();
+  color: brown;
 }
 
 .toggle-bg-btn {
@@ -94,13 +94,15 @@ body {
 
 .country-details {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .country-flag {
   width: 500px;
-  /* height: 200px; */
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
+.country-content {
+  background-color: blueviolet;
+} */

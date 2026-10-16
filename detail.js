@@ -12,10 +12,10 @@ if (savedCountry) {
     <img class="country-flag" src="${country.flag}" alt="${country.name} flag" />
     </div>
 
-      <div>
-      <h2>${country.name}</h2>
+      <div class="country-content">
+      <h2 class="country-name">${country.name}</h2>
 
-      <div>
+      <div class="div">
         <p><strong>Population: </strong>${country.population}</p>
         <p><strong>Native Name: </strong>${country.nativeName}</p> 
         <p><strong>Region: </strong>${country.region}</p>
