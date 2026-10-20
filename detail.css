@@ -22,10 +22,15 @@
 
 .dark-mode {
   --Blue900-DarkModeElements: hsl(209, 23%, 22%);
-  --WhiteDarkModeTextLightModeElements: hsl(209, 23%, 22%);
-
+  --Grey950LightModeText: hsl(0, 0%, 100%);
+  background-color: var(--Blue950-DarkModeBackground);
+  --WhiteDarkModeTextLightModeElements: hsl(0, 0%, 100%);
+  --Grey50LightModeBackground: #3a3a3a;
+  --Grey950LightModeText: hsl(0, 0%, 100%);
+  --WhiteDarkModeTextLightModeElements: hsl(207, 26%, 17%);
+  color: var(--WhiteDarkModeTextLightModeElements);
+    --Grey950LightModeText: #fff;
 }
-
 
 body {
   max-width: 1440px;
@@ -46,7 +51,7 @@ body {
   font-family: var(--MainFont);
   font-weight: bold;
   margin-left: 80px;
-  color: brown;
+  color: #fff;
 }
 
 .toggle-bg-btn {
@@ -75,6 +80,7 @@ body {
   gap: 6px;
   margin-right: 80px;
   cursor: pointer;
+  color: var(--Grey950LightModeText);
 }
 
 .back-btn {
@@ -94,6 +100,7 @@ body {
 
 .country-details {
   display: flex;
+  margin: 0;
 }
 
 .country-flag {
@@ -103,6 +110,46 @@ body {
   border-top-right-radius: 5px;
 }
 
-.country-content {
-  background-color: blueviolet;
-} 
+
+.country-details {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin: 40px 80px;
+}
+
+.country-flag {
+  width: 100%;
+  flex: 1;
+  height: auto;
+  display: block;
+}
+
+.countries-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 4em;
+}
+
+.country-content>div {
+  margin-bottom: 24px;
+}
+
+.country-name {
+  font-family: var(--MainFont);
+  margin: 20px 0;
+}
+
+.countries-content  p {
+  font-family: var(--MainFont);
+}
+
+.border-country {
+font-family: var(--MainFont);
+ font-size: .9em;
+  margin: 30px 8px;
+  padding: 8px 24px;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.2);
+}

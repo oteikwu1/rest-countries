@@ -31,7 +31,7 @@
    --Grey950LightModeText: hsl(0, 0%, 100%);
    --WhiteDarkModeTextLightModeElements: hsl(207, 26%, 17%);
     --Grey950LightModeText: hsl(0, 0%, 100%);
-   color: var(--WhiteDarkModeTextLightModeElements)
+   color: var(--WhiteDarkModeTextLightModeElements);
 }
 
 
