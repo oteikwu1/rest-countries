@@ -150,11 +150,15 @@ body {
 
 .display-country {
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    gap: 40px;
-    margin: 40px 80px;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(260px, 1fr)
+    );
+    gap: 24px;
+    margin: 40px auto;
+    padding: 0 24px;
+    max-width: 1440px;
 }
-
 
 .countries-result {
     border-radius: 8px;

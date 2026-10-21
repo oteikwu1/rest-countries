@@ -15,3 +15,5 @@ A lightweight, well-structured RESTful API that provides detailed information ab
 ##  Tech Stack
  **Language / Runtime:**HTML CSS and  JavaScript
 
+git clone https://github.com/oteikwu/country-rest-api.git
+cd country-rest-api
