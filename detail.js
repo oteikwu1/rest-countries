@@ -51,8 +51,8 @@ if (savedCountry) {
                 <p><strong>Languages:</strong> ${country.languages?.map((lang) => lang.name).join(', ') || 'N/A'}</p>
             </div>
             </div>
-             <p>
-            <strong>Border Countries:</strong>${country.borders?.length ? country.borders.map((border) => `<span class="border-country">${border}</span> `).join('') : 'None'}
+             <p class="countries-title">
+            <strong>Border Countries:</strong>${country.borders?.length ? country.borders.map((border) => `<span class="border-country">${border.charAt(0).toUpperCase() + border.slice(1).toLowerCase()}</span> `).join('') : 'None'}
              </p>
         </div>
     </div>
