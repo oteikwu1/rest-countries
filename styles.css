@@ -15,10 +15,10 @@
    --WhiteDarkModeTextLightModeElements: hsl(0, 0%, 100%);
    --HomePageFontSize: 14px;
    --HomePageFontSize: 16px;
-   --FontWeights1: 300;
-    --FontWeights1: 300;
-    --FontWeights1: 600;    
-    --FontWeights1: 800;
+   --Font-weight-small: 300;
+    --Font-weight-semibold: 300;
+    --Font-weight-bold: 600;    
+    --Font-weight-bolder: 800;
     --MainFont: "Nunito Sans", sans-serif;
 }
 
@@ -165,6 +165,19 @@ body {
     background-color: var(--WhiteDarkModeTextLightModeElements);
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
     padding-bottom: 40px;
+}
+
+.countries-result-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.countries-result-card:hover,
+.countries-result-card:focus-visible {
+    transform: translateY(-4px);
+    border-radius: 8px;
 }
 
 .countries-result p {

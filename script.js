@@ -29,6 +29,7 @@ function displayCountries(countries) {
     .map(
       (country) =>
         `
+      <a href="detail.html" class="countries-result-card">
      <div class="countries-result">
       <img class="country-flag" src="${country.flag}" alt="${country.name} flag" />
       <h3 class="country-name">${country.name}</h3>
@@ -36,7 +37,8 @@ function displayCountries(countries) {
      <p> <strong>Region: </strong>${country.region}  </p>
       <p> <strong>Capital: </strong>${country.capital}  </p>
      </div>
-`,
+     </a>
+    `,
     )
     .join('');
 }
