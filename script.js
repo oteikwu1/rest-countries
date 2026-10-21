@@ -24,7 +24,7 @@ function toggleBackgroundColor() {
  toggleBgBtn.addEventListener('click', toggleBackgroundColor);
 
  
-function displayCountries(allCountries) {
+function displayCountries(countries) {
   displayContainer.innerHTML = countries
     .map(
       (country) =>
@@ -65,20 +65,16 @@ searchInput.addEventListener("keydown", (e) => {
 
 });
 
-function handleRegionSelection(event) {
-  const selectedRegion = event.target.value;
 
-  if(!selectedRegion || selectedRegion === 'filter') {
-    return countries;
+regionSelect.addEventListener('change', (e) => {
+  const selectedRegion = e.target.value.toLowerCase();
+
+  if (selectedRegion === 'all') {
+     displayCountries(countries);
+  } else {
+    const filteredCountries = countries.filter(
+      (country) => country.region && country.region.toLowerCase() === selectedRegion,
+    );
+    displayCountries(filteredCountries);
   }
-
-  const filterData = countries.filter(country => country.region === selectedRegion)
-  return filterData
-}
-
-regionSelect.addEventListener('change', (event) => {
-  const result = handleRegionSelection(event);
-
-   displayCountries(result);
-})
-
+});
