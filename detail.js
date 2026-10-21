@@ -42,7 +42,7 @@ if (savedCountry) {
                 <p><strong>Native Name:</strong> ${country.nativeName}</p>
                 <p><strong>Region:</strong> ${country.region}</p>
                 <p><strong>Sub Region:</strong> ${country.subregion}</p>
-                <p><strong>Capital:</strong> ${country.capital}</p>
+                <p><strong class="capital">Capital:</strong> ${country.capital}</p>
             </div>
 
             <div>
@@ -51,8 +51,8 @@ if (savedCountry) {
                 <p><strong>Languages:</strong> ${country.languages?.map((lang) => lang.name).join(', ') || 'N/A'}</p>
             </div>
             </div>
-            <p>
-            <strong>Border Countries:</strong>${country.borders?.length ? country.borders.map((border) => `<span class="border-country">${border}</span> `,).join(''): 'None'}
+             <p>
+            <strong>Border Countries:</strong>${country.borders?.length ? country.borders.map((border) => `<span class="border-country">${border}</span> `).join('') : 'None'}
              </p>
         </div>
     </div>

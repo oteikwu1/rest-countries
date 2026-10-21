@@ -51,7 +51,7 @@ body {
   font-family: var(--MainFont);
   font-weight: bold;
   margin-left: 80px;
-  color: #fff;
+  color: var(--Grey950LightModeText)
 }
 
 .toggle-bg-btn {
@@ -115,21 +115,16 @@ body {
   display: flex;
   align-items: center;
   gap: 60px;
-  margin: 40px 80px;
+  margin: 40px 40px;
 }
 
-.country-flag {
-  width: 100%;
-  flex: 1;
-  height: auto;
-  display: block;
-}
+
 
 .countries-content {
   display: flex;
   align-items: center;
   gap: 80px;
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 }
 
 .country-content>div {
@@ -139,17 +134,51 @@ body {
 .country-name {
   font-family: var(--MainFont);
   margin: 20px 0;
+  color: var(--Grey950LightModeText);
 }
 
 .countries-content  p {
   font-family: var(--MainFont);
+  color: var(--Grey950LightModeText);
+}
+
+.capital {
+  font-family: var(--MainFont);
+  color: var(--Grey950LightModeText);
 }
 
 .border-country {
-font-family: var(--MainFont);
+ font-family: var(--MainFont);
  font-size: .9em;
-  margin: 30px 8px;
-  padding: 8px 24px;
+  margin: 3px 2px;
+  padding: 4px 16px;
   text-transform: uppercase;
   box-shadow: rgba(0, 0, 0, 0.2);
+  color: var(--Grey950LightModeText);
+  background-color: beige;
+}
+
+.countries-border {
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+      width: 100%;
+      max-width: 100%;
+      padding: 50px 0;
+  }
+  
+  .header-text {
+      font-size: 1em;
+      margin: 20px;
+  }
+  
+  .toggle-bg-btn {
+      margin-right: 20px;
+  }
+
+  .country-details {
+    flex-direction: column;
+  }
 }
