@@ -58,7 +58,11 @@ searchInput.addEventListener("keydown", (e) => {
       window.location.href = "detail.html"
      
     } else {
-        displayContainer.innerHTML = `<h2>Country not Found</h2>`;
+        displayContainer.innerHTML = `
+         <h1>Opps!!</h1>
+        <h2>Country not Found</h2>
+        
+        `;
     }
    searchInput.value = '';
   }

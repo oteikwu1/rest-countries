@@ -1,0 +1,17 @@
+# REST Countries API
+
+A lightweight, well-structured RESTful API that provides detailed information about countries around the world, including regions, capitals, currencies, languages, population, and flag data.
+
+
+##  Features
+
+ **Filter & Search:** Search countries by full name
+ **Detailed Data Points:** Access comprehensive information including borders, top-level domains, 
+ **Clean Architecture:** Built with modularity, maintainability, and REST principles in mind.
+ **Structured JSON Responses:** Standardized response format with predictable  status codes.
+
+
+
+##  Tech Stack
+ **Language / Runtime:**HTML CSS and  JavaScript
+
